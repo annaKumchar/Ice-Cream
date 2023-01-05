@@ -1,0 +1,288 @@
+<header id="home">
+  <section class="container positioning-container">
+    <div class="positioning-container">
+      <div class="header">
+        <a href="" class="logo">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/header/logo-L.png    1x,
+                ./images/header/logo-L@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/header/logo-m.png    1x,
+                ./images/header/logo-m@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="
+                ./images/header/logo-s.png    1x,
+                ./images/header/logo-s@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="logo-img"
+              src="./images/header/logo-s.png"
+              alt="Логотип"
+            />
+          </picture>
+        </a>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#home" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#howmade" class="header__link">How it’s made?</a>
+          </li>
+          <li class="header__item">
+            <a href="#ourproducts" class="header__link">Our products</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="20px" height="12px">
+            <use href="./images/header.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <button class="header__button" type="button" data-modal-buy-open>
+          Buy now
+          <svg class="header__button-icon" width="5px" height="9px">
+            <use href="./images/header.svg#icon-inbutton"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="highlights">
+        <ul class="highlights__list">
+          <li class="highlights__item">
+            <p class="highlights__text">
+              <span class="highlights__text--span">16</span> cafes
+            </p>
+          </li>
+          <li class="highlights__item">
+            <p class="highlights__text">
+              <span class="highlights__text--span">23</span> food trucks
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- hero -->
+      <section class="hero__container">
+        <div class="hero">
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title--span">passion</span>
+          </h1>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <a href="#ourproducts" class="hero__link--products">Products</a>
+            </li>
+            <li class="hero__item">
+              <a href="#howmade" class="hero__link--howmade">How it’s made?</a>
+            </li>
+          </ul>
+          <div class="hero__text--div">
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <a href="#ourproducts" class="hero__text--link">
+              <svg class="hero__text--link-icon">
+                <use href="./images/header.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- background images -->
+        <picture class="hero__img--dotes">
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./images/header/dotes-L.png    1x,
+              ./images/header/dotes-L@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/header/dotes-m.png    1x,
+              ./images/header/dotes-m@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="
+              ./images/header/dotes-S.png    1x,
+              ./images/header/dotes-S@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__img--dotes-img"
+            src="./images/header/dotes-S.png"
+            alt="крапочки"
+          />
+        </picture>
+        <picture class="hero__img--icecream">
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./images/header/icecream-l.png    1x,
+              ./images/header/icecream-l@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/header/icecream-m.png    1x,
+              ./images/header/icecream-m@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="
+              ./images/header/icecream-s.png    1x,
+              ./images/header/icecream-s@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="./images/header/icecream-s.png" alt="морозиво" />
+        </picture>
+      </section>
+
+      <!-- burger menu -->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__close js-close-menu">
+          <svg class="mobile-menu__close-icon" width="19px" height="19px">
+            <use href="./images/header.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </button>
+        <img
+          class="mobile__nav--logo"
+          srcset="
+            ./images/header/logo-s.png    1x,
+            ./images/header/logo-s@2x.png 2x
+          "
+          src="./images/header/logo-s.png"
+          alt="Логотип"
+        />
+        <ul class="list mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#home" class="mobile-nav__link">Home</a>
+          </li>
+          <li>
+            <a href="#howmade" class="mobile-nav__link">How it’s made?</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#ourproducts" class="mobile-nav__link">Our products</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#contact" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+        <button class="mobile-nav__button" type="button" data-modal-buy-open2>
+          Buy now
+          <svg class="header__button-icon" width="5px" height="9px">
+            <use href="./images/header.svg#icon-inbutton"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- modal -->
+      <div class="backdrop-hero backdrop-hero--is-hidden" data-modal-buy>
+        <div class="modal-buy">
+          <button
+            class="header__modal-close-btn"
+            type="button"
+            data-modal-buy-close
+          >
+            <svg class="header__modal-close-btn__icon" width="20" height="20">
+              <use href="./images/header.svg#icon-closeblack"></use>
+            </svg>
+          </button>
+          <h2 class="modal-buy__main-title">Buy now</h2>
+          <ul class="modal-buy__list">
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--icecream"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--icecream">
+                ice cream
+              </h3>
+            </li>
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--icecoffee"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--icecoffee">
+                ice coffee
+              </h3>
+            </li>
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--milkshake"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--milkshake">
+                milkshake
+              </h3>
+            </li>
+          </ul>
+          <form action="URL" class="modal-buy__form">
+            <ul class="modal-buy__form-list">
+              <li class="modal-buy__form-item">
+                <label for="header__name" class="form__label"></label>
+                <input
+                  type="text"
+                  class="header-form__input"
+                  name="name"
+                  id="header__name"
+                  placeholder="Name"
+                />
+              </li>
+              <li class="modal-buy__form-item">
+                <label for="header__phone" class="form__label"></label>
+                <input
+                  type="tel"
+                  class="header-form__input"
+                  name="phone"
+                  id="header__phone"
+                  placeholder="Phone"
+                />
+              </li>
+              <li class="modal-buy__form-item">
+                <label for="header__text" class="form__label"></label>
+                <textarea
+                  name="text"
+                  id="header__text"
+                  placeholder="Comment"
+                  class="header-form__input header-form__input--text"
+                ></textarea>
+              </li>
+            </ul>
+            <button class="form__button" type="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>

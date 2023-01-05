@@ -1,0 +1,262 @@
+.customer-reviews {
+  padding-bottom: 394px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url('../images/reviews/customers-background-1920.png');
+  background-color: $pureWhiteColor;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-color: $pureWhiteColor;
+    background-image: url('../images/reviews/customers-background-1920@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 373px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 203px;
+  }
+}
+
+.gallery__slider {
+  width: 100%;
+  background: linear-gradient(
+    $backgroundColor 22.3%,
+    rgba(255, 255, 255, 0.016) 22.3%
+  );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      $backgroundColor 50%,
+      rgba(255, 255, 255, 0.016) 50%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      $backgroundColor 25%,
+      rgba(255, 255, 255, 0.016) 25%
+    );
+  }
+}
+
+.photo-1,
+.photo-2,
+.photo-3 {
+  border-radius: 11px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    border-radius: 19px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.swiper-pagination {
+  display: block;
+  padding-bottom: 394px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 383px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 203px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d9d9d9;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: $backgroundColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: contents;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 14px;
+}
+
+.customer-reviews {
+  background-size: contain;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  & .container {
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    background-color: $backgroundColor;
+    padding: 34px 39px;
+    margin: 31px 0;
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+      padding: 29px 80px;
+      margin: 31px 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 39px 74px;
+      margin: 32px 116px;
+    }
+  }
+
+  &__image {
+    margin: 80px auto 0;
+
+    @media screen and (min-width: 768px) {
+      margin: 60px auto 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 128px auto 0;
+    }
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    position: relative;
+
+    z-index: 1;
+
+    padding: 0;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+
+    color: $mainColorText;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 2.16;
+
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.86;
+
+      padding: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__author {
+    margin: 0 0 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    position: relative;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1, 85;
+    text-align: center;
+
+    color: $secondaryColorText;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1, 88;
+      margin: 0 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      left: 50%;
+      top: -18px;
+      transform: translateX(-50%);
+
+      @media screen and (min-width: 768px) {
+        top: -14px;
+      }
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translate3d(0, 0, 0) translateX(-50%);
+}
